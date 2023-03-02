@@ -5,7 +5,7 @@
  * @dest: parameter
  * @src: parameter
  * @n: parameter
- * Return: Always 0
+ * Return: concatinating string
  */
 
 char *_strncat(char *dest, char *src, int n)
