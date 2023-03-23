@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "funtion_pointers.h"
+#include "function_pointers.h"
 
 /**
 * int_index - returns index
@@ -20,4 +20,5 @@ for (i = 0; i < size; i++)
 if (cmp(array[i]))
 return (i);
 }
+return (-1);
 }

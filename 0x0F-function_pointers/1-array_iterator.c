@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "funtion_pointers.h"
+#include "function_pointers.h"
 /**
 * array_iterator- points each arrays
 * @array: parameter
@@ -11,8 +11,9 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 
 {
+unsigned int i;
 if (array == NULL || action == NULL)
-return (0);
+return;
 for (i = 0; i < size; i++)
 action(array[i]);
 }
