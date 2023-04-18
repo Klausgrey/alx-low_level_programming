@@ -4,6 +4,7 @@
 * string_nconcat - function that concatinates a string.
 * @s1: pointer to the first string.
 * @s2: pointer to the second string.
+* @n: parameter
 * Return: Null if an error occurrs.
 */
 
