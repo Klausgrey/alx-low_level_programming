@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+* string_nconcat - function that concatinates a string.
+* @s1: pointer to the first string.
+* @s2: pointer to the second string.
+* Return: Null if an error occurrs.
+*/
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
