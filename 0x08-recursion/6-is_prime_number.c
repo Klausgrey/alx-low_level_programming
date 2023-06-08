@@ -5,7 +5,6 @@ int act_is_prime_number(int num, int i);
  * @n: parameter
  * Return: 0
  */
-
 int is_prime_number(int n)
 {
 	if (n <= 1)
@@ -13,13 +12,13 @@ int is_prime_number(int n)
 	return (act_is_prime_number(n, n - 1));
 }
 
-int act_is_prime_number(int num, int i)
 /**
- * act_is_prime_number - funtion that calculates if the int is prime or not
+ * act_is_prime_number - function that calculates if the num is prime or not
  * @num: parameter
  * @i: iterator
  * Return: 0 if prime & 1 if mot prime
  */
+int act_is_prime_number(int num, int i)
 {
 	if (num <= 1)
 	{
