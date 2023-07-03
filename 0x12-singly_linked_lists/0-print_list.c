@@ -2,23 +2,23 @@
 #include "lists.h"
 
 /**
-* print_list - prints all the element in the list structure
-* @list_t: parameter
-* @h: pointer pointing to a steuxture
-* Return: int
+ * print_list - prints all the values in a structure
+ * @h: pointer to the node.
+ * Return: number if nodes
 */
 
 size_t print_list(const list_t *h)
 {
-size_t j = 0;
+	size_t n = 0;
 
-for (j = 0; h != NULL; j++)
-{
-if (h->str != NULL)
-printf("[%u] %s\n", h->len, h->str);
-else
-printf("[0] (nil)\n");
-h = h->next;
-}
-return (j++);
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+		printf("[0] (nil)\n");
+		else
+		printf("[%u] %s\n", h->len, h->str);
+		n++;
+		h = h->next;
+	}
+	return (n++);
 }
