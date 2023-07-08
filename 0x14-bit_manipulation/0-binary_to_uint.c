@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 	ind++;
 	while (ind)
 	{
-		if (b[ind - 1] < '0' || b[ind - 1] > '1')
+		if (b[ind - 1] != '0' && b[ind - 1] != '1')
 		return (0);
 		if (b[ind - 1] == '1')
 		value += base;
