@@ -4,3 +4,27 @@ c
 d
 e
 f
+/*
+0x01 in binary is 0001
+0x02 in binary is 0010
+0x03 in binary is 0011
+0x04 in binary is 0100
+0x05 in binary is 0101
+0x06 in binary is 0110
+0x07 in binary is 0111
+0x08 in binary is 1000
+0x09 in binary is 1001
+0x0A in binary is 1010
+0x0B in binary is 1011
+0x0C in binary is 1100
+0x0D in binary is 1101
+0x0E in binary is 1110
+0x0F in binary is 1111
+0x10 in binary is 00010000
+In hexadecimal, each digit corresponds to 4 bits in binary. So, for numbers from 1 to 15, you can easily convert them to 4-bit binary representations by breaking down each hexadecimal digit into 4 bits. 0x10 represents 16 in decimal, and its binary representation is 00010000.
+*/
+
+
+
+
+
