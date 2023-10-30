@@ -12,23 +12,20 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file;
-	int w;
-	int i;
+	int i = 0, len;
 
-	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC);
-	if ((file == -1) || (filename == NULL))
-	{
-		return (-1);
-	}
+	file = open(filename, O_RDWR | O_CREAT | O_TRUNC);
+	if ((file < 0) || (filename == NULL))
+	return (-1);
 	if (text_content == NULL)
 	{
 		close(file);
 		return (1);
 	}
-	for (i = 0; text_content[i] != '\0'; i++)
-	w = write(file, text_content, i);
-	if (w < 0)
-	return (-1);
+	for (len = 0; text_content[len] != '\0'; len++)
+	i = write(file, text_content, len);
 	close(file);
+	if (i < 0)
+	return (-1);
 	return (1);
 }
