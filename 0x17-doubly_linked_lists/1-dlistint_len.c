@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint -  prints all the elements of a dlistint_t list.
+ * dlistint_len - prints all the elements of a dlistint_t list.
  * @h: pointer to the head
  * Return: The number of elements in the list
 */
@@ -12,8 +12,8 @@ size_t dlistint_len(const dlistint_t *h)
 
 	while (h != NULL)
 	{
-        count++;
 		h = h->next;
+		count++;
 	}
 	return (count);
 }
