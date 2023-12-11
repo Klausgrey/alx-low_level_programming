@@ -43,3 +43,14 @@ int mod(int a, int b)
 {
 	return (a % b);
 }
+
+/**
+* div - gets the remnainder two numbers
+* @a: paramter
+* @b: parameter
+*/
+
+int div(int a, int b)
+{
+	return (a / b);
+}
