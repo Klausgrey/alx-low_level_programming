@@ -20,7 +20,7 @@
 	new_head->size = size;
 	new_head->array = calloc((size_t)size, sizeof(hash_node_t *));
 
-	if(new_head == NULL)
+	if(new_head->array == NULL)
 		return (NULL);
 
 	return (new_head);
