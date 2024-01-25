@@ -2,6 +2,7 @@
 #define hash_tables
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**STRUCTURES*/
 /**
