@@ -11,8 +11,8 @@
  * In case of collision, add the new node at the beginning of the list
  */
 
- int hash_table_set(hash_table_t *ht, const char *key, const char *value)
- {
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
 	hash_node_t *new;
 	unsigned long int i, index;
 	char *new_value;
@@ -51,5 +51,4 @@
 	new->next = ht->array[index];
 	ht->array[index] = new;
 	return (1);
- }
- 
+}
